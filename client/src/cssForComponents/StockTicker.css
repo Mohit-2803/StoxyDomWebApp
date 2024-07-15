@@ -1,0 +1,51 @@
+/* StockTicker.css */
+.stock-ticker {
+  overflow: hidden;
+  background-color: #151e28; /* Same background color as the header */
+}
+
+.stock-ticker ul {
+  display: flex; /* Use flexbox for responsive behavior */
+  padding: 0;
+  margin: 0;
+  animation: ticker 30s linear infinite; /* Adjust animation properties */
+  overflow: hidden; /* Hide overflowing content */
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Use -100% for full width translation */
+  }
+}
+
+.stock-ticker li {
+  padding: 0 0.7rem;
+  display: flex; /* Use flexbox for responsive behavior */
+  align-items: center; /* Center items vertically */
+}
+
+.stock-name {
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.stock-price {
+  margin-left: 0.35rem;
+  color: aliceblue;
+}
+
+.arrow {
+  margin-left: 0.5rem;
+}
+
+.arrow-up {
+  color: green;
+}
+
+.arrow-down {
+  color: red;
+}

@@ -1,0 +1,219 @@
+/* Header.css */
+
+/* Header container */
+.header {
+  background-color: #151e28;
+  color: #fff;
+  padding: 1rem;
+  padding-right: 4rem;
+  padding-left: 2rem;
+  height: 75px;
+}
+
+/* Container for logo, search, and navigation */
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo/title */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+/* Logo icon */
+.logo-icon {
+  color: rgb(0, 38, 255); /* Example color */
+  font-size: 24px; /* Example font size */
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+/* Logo icon hover effect */
+.logo-icon:hover {
+  color: #45a049; /* Change color on hover */
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Add transition for smooth color change */
+}
+
+/* Navigation link hover effect */
+.nav-links li:hover {
+  color: #cbd5e0;
+  background-color: #374151; /* Change background color on hover */
+}
+
+/* Header.css */
+
+.search-container {
+  position: relative;
+}
+
+.search-bar {
+  padding-left: 40px; /* Adjust the padding to make space for the icon */
+  width: 400px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: rgb(38, 47, 58);
+  border: none; /* Remove border */
+  outline: none;
+  color: #fff; /* Text color */
+  padding-bottom: 5px;
+  padding-top: 4px;
+  color: #cbd5e0;
+}
+
+.fa-search {
+  position: absolute;
+  left: 10px; /* Adjust the left position to place the icon where you want */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888; /* Adjust icon color as needed */
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.fa-search:hover {
+  color: #45a049; /* Change icon color on hover */
+}
+
+.xicon {
+  position: absolute;
+  left: 92%; /* Adjust the left position to place the icon where you want */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888; /* Adjust icon color as needed */
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.login-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition for smooth color change */
+  margin-left: 15px;
+}
+
+.login-button:hover {
+  background-color: #136917;
+}
+
+.profile {
+  background-color: #4f3da2;
+  padding: 4px 10px;
+  border-radius: 4px;
+  gap: 5px;
+}
+
+.logout-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition for smooth color change */
+  margin-left: 15px;
+}
+
+.logout-button:hover {
+  background-color: #136917;
+}
+
+.logged {
+  margin-left: 10px;
+}
+
+/* Navigation links */
+.nav-links ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-left: 12px; /* Adjust spacing between navigation items */
+  padding: 6px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Hide navigation links */
+  .nav-links ul {
+    display: none;
+  }
+
+  .header {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  /* Show search icon and login button only */
+  .search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    text-align: center;
+    margin-right: 1.1rem;
+  }
+
+  .search-bar {
+    display: none; /* Hide search bar */
+  }
+
+  .fa-search {
+    color: #888; /* Adjust icon color as needed */
+    font-size: 1.25rem; /* Adjust icon size */
+    transition: color 0.3s ease; /* Add transition for smooth color change */
+    cursor: pointer;
+    margin-left: 3rem;
+  }
+
+  .fa-search:hover {
+    color: #45a049; /* Change icon color on hover */
+  }
+
+  .login-button {
+    display: inline-block; /* Ensure login button is visible */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition for smooth color change */
+  }
+
+  .login-button:hover {
+    background-color: #136917;
+  }
+}

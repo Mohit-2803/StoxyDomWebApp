@@ -1,0 +1,77 @@
+/* Nifty.css */
+
+.nifty {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center; /* Center-align the price cards */
+  align-items: center;
+  background-color: #151e28;
+}
+
+.price-card {
+  background-color: #252c36;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Adjust to column for better alignment */
+  align-items: center; /* Center-align content vertically */
+  justify-content: center;
+  text-align: center;
+  width: 175px;
+}
+
+.price-title {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: rgb(212, 206, 206);
+  font-weight: 500;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #00cc00;
+}
+
+.percentage1 {
+  font-size: 1rem;
+  color: #00cc00; /* Set default color for percentage */
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+  font-weight: bold;
+}
+
+.arrow-up {
+  color: #00cc00; /* Green color for positive change */
+}
+
+.arrow-down {
+  color: #ff0000; /* Red color for negative change */
+}
+
+/* Positive percentage */
+.positive {
+  color: #00cc00; /* Green color for positive change */
+}
+
+/* Negative percentage */
+.negative {
+  color: #ff0000; /* Red color for negative change */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nifty {
+    flex-direction: column; /* Stack price cards vertically on smaller screens */
+    align-items: center; /* Center-align the price cards */
+  }
+
+  .price-card {
+    width: 100%; /* Make price cards take full width on smaller screens */
+    max-width: 300px; /* Set maximum width for better readability */
+  }
+}

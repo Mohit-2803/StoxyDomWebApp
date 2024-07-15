@@ -1,0 +1,63 @@
+/* Base styles for the Overview component */
+.overviewCurrency {
+  font-size: 60%;
+  color: antiquewhite;
+}
+
+.overviewPrice {
+  font-size: 180%;
+  color: aliceblue;
+}
+
+.overviewPercent {
+  font-size: 140%;
+  color: white; /* Ensure text is readable against any background */
+}
+
+/* Responsive styles for different screen sizes */
+
+/* Small screens: up to 480px (small mobile phones) */
+@media (max-width: 480px) {
+  .overviewCurrency {
+    font-size: 50%;
+  }
+
+  .overviewPrice {
+    font-size: 140%; /* Reduce font size for better readability */
+  }
+
+  .overviewPercent {
+    font-size: 120%; /* Reduce font size for better readability */
+  }
+
+  /* Adjust gap between items for small screens */
+  .overviewPrice,
+  .overviewPercent {
+    margin: 0;
+    padding: 0.5rem 0;
+  }
+}
+
+/* Medium screens: 481px to 768px (tablets and small laptops) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .overviewCurrency {
+    font-size: 55%;
+  }
+
+  .overviewPrice {
+    font-size: 160%; /* Adjust font size for better readability */
+  }
+
+  .overviewPercent {
+    font-size: 130%; /* Adjust font size for better readability */
+  }
+
+  /* Slightly adjust gap between price and percent */
+  .overviewPrice,
+  .overviewPercent {
+    margin: 0.5rem;
+  }
+}
+
+/* Large screens: 769px and up (desktops and large laptops) */
+/* No changes needed for larger screens. Adjust as needed based on your design */

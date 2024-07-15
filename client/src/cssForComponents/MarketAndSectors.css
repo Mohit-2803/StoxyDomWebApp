@@ -1,0 +1,127 @@
+/* Main container styles */
+.market-and-sectors {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: #f5f9fc;
+  padding-bottom: 5rem;
+}
+
+/* Row styles for sector cards */
+.sector-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Card styles for each sector */
+.sector-card {
+  flex: 1;
+  background: linear-gradient(
+    135deg,
+    #09203f,
+    #537895
+  ); /* Card gradient background */
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  position: relative; /* Needed for absolute positioning */
+}
+
+/* Decorative patterns on cards */
+.sector-card::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 50px;
+  height: 50px;
+  background: url("pattern.svg") no-repeat center center; /* Decorative pattern */
+  opacity: 0.1; /* Subtle opacity */
+  pointer-events: none; /* Disable pointer events */
+}
+
+/* Card hover effects */
+.sector-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(
+    135deg,
+    #764ba2,
+    #667eea
+  ); /* Gradient transition on hover */
+}
+
+/* Sector title styles */
+.sector-title {
+  font-size: 1.05rem; /* Reduced font size */
+  font-weight: 700;
+  color: #2c3e50; /* Darker text color */
+  margin-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif; /* Stylish font family */
+}
+
+/* Sector price styles */
+.sector-price {
+  font-size: 0.95rem; /* Reduced font size */
+  font-weight: 600;
+  color: #34495e; /* Dark blue text color */
+  margin-bottom: 0.5rem;
+}
+
+/* Change indicator styles */
+.change-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem; /* Reduced font size */
+  margin-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif; /* Stylish font family */
+}
+
+/* Positive and negative percentage styles */
+.positive .percentage,
+.fa-arrow-up {
+  color: #00c853; /* Bright green color */
+}
+
+.negative .percentage,
+.fa-arrow-down {
+  color: #e74c3c; /* Bright red color */
+}
+
+.fa-arrow-up,
+.fa-arrow-down {
+  margin-left: 0.5rem;
+}
+
+/* Loading spinner container */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .sector-card {
+    flex-basis: calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .sector-card {
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,11 @@
+.chart {
+  background-color: #151e28;
+  padding-top: 50px;
+}
+
+.StockTitle {
+  font-size: 30px;
+  margin-left: 11%;
+  padding-top: 40px;
+  color: azure;
+}

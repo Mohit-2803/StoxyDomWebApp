@@ -1,0 +1,29 @@
+/* Basic styles for the Details component */
+.detailItem {
+  border-bottom: 1px solid rgb(51, 53, 83);
+  color: aliceblue;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detailList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+/* Responsive styles for larger screens (tablets and desktops) */
+@media (min-width: 768px) {
+  .detailList {
+    flex-wrap: wrap;
+    flex-direction: row; /* Switch to row layout on larger screens */
+  }
+
+  .detailItem {
+    padding: 15px;
+  }
+}
